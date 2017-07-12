@@ -1,5 +1,4 @@
 #CODING EXERCISE - Angular2/SPA
-Angular2 Example
 
 ## Table of Contents
 1. Evaluation guidelines
