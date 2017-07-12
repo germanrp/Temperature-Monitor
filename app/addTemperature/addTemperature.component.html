@@ -1,0 +1,87 @@
+
+<!-- The form to add temperatures starts here -->
+
+<form class="form-style" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+	<div class="form-group col-xs-12">
+		<ul>
+			<li class="col-xs-8">
+				<label for="temperature">
+					Add	Temperature
+				</label> 
+				<input type="text" 
+						class="form-control" 
+						id="myIndex" 
+						[(ngModel)]="input.value" 
+						name="myIndex" 
+						maxlength="100" 
+						#input="ngModel">				
+						
+				<span> Enter the temperature here ()in &deg;F) </span> 
+					
+				<br />
+				
+				
+				<!-- The error message section goes here -->
+				
+				<div [hidden]="!showError"
+						class="alert alert-danger custom-alert">
+					<input 
+						class="form-control" 
+						id="errorMessage" 
+						type="text" 
+						name="errorMessage"
+						[(ngModel)]="errorMessage" 
+						#change> 
+						
+				</div>
+			</li>
+			
+			
+			<!-- The magic starts when the user ADDs an element to the stack here -->
+			
+			<li class="col-xs-4">
+				<button type="submit" 
+						class="btn btn-success btn-fix"
+						(click)="addRecipient(input.value)"> Add
+				</button>
+			</li>
+		</ul>
+
+
+	</div>
+</form>
+<!-- End of the form -->
+						
+						
+<div class="col-xs-1"></div>
+
+<!-- My simple (but beautiful) progressBar goes here -->
+
+<div class="progress col-xs-7">
+	<div class="progress-bar"
+		[ngStyle]="{ 'width': currentPercentage + '%' }">
+		<span>{{currentPercentage}}% Full</span>
+	</div>
+</div>
+
+<div class="col-xs-4"></div>
+
+<!-- 	Let's interact with the stack here to view/remove elements from it. 
+		It's hidden until the User adds first element (recipient). Only 8 are allowed -->
+
+<div class="col-xs-10">
+	<table class="table-style" [hidden]="!submitted">
+		<tr>
+			<th>Temperatures</th>
+		</tr>
+		<div *ngFor=" let recipient of recipients;  let i=index"
+			id="conditional-div">
+			<div *ngIf="i<8">
+				<tr>
+					<td>{{recipient}}</td>
+					<td><button type="submit" (click)="removeRecipient(recipient)">Delete</button></td>
+				</tr>
+			</div>
+		</div>
+	</table>
+</div>

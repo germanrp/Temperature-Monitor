@@ -1,0 +1,47 @@
+
+<div class="col-xs-4">
+	<section class="section-fix">
+		<button type="submit" 
+				class="btn btn-success"
+				(click)="calculateMedian()"> Calculate
+		</button>
+	</section>
+</div>
+
+<div class="col-xs-8">	
+	 <table class="table-class">
+        <tr>
+            <td uppercase>Mean</td>
+            <td>
+            	<input type="text" 
+            			class="form-control"
+						value="30" 
+						[ngModel]="meanResult | number:'1.2-2'"
+						readonly
+						#change>
+			</td>
+        </tr>
+        <tr>
+            <td uppercase>Median</td>
+            <td>
+				<input type="text" 
+            			class="form-control"
+						value="30"						
+						[ngModel]="medianResult | number:'1.2-2'" 
+						readonly
+						#change>
+			</td>
+        </tr>
+        <tr>
+            <td uppercase>Range</td>
+            <td>
+            	<input type="text" 
+            			class="form-control"
+						value="30" 
+						[ngModel]="rangeResult | number:'1.2-2'"
+						readonly
+						#change>
+			</td>
+        </tr>
+    </table>
+</div>

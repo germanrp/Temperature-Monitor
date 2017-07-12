@@ -1,0 +1,27 @@
+/* This is for Calculate Median component styles */
+
+.section-fix {
+	padding-top: 68px;
+	text-align: right;
+}
+
+.table-class {
+	overflow-x: auto;
+	margin-top: 40px;
+	border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.table-class input[type="text"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	height: 35px;
+	line-height: 25px;
+	font-size: 16px;
+    padding-left: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}

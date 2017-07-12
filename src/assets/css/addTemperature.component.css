@@ -1,0 +1,124 @@
+/* This is for Add Temperature component styles */
+
+.form-style {
+	max-width: 600px;
+	margin: 50px 30px;
+	background: #fff;
+	border-radius: 2px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.form-style li {
+	display: block;
+	padding: 9px;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+}
+
+.form-style li:last-child {
+	border: none;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	text-align: center;
+	padding-right: 40px
+}
+
+.form-style li>label {
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	padding: 2px 5px 2px 5px;
+	color: #B9B9B9;
+	font-size: 14px;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-style input[type="text"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	height: 35px;
+	line-height: 25px;
+	font-size: 16px;
+    padding-left: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style input[type="text"]:focus {
+	
+}
+
+.form-style li>span {
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 10px -9px -29px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.form-style input[type="submit"], .action-button {
+	background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+	color: #D2E2FF;
+}
+
+.form-style input[type="submit"]:hover, .action-button:hover {
+	background: #6B9FFF;
+	color: #fff;
+}
+
+.table-style {
+	background-color: #FFFFE0;
+	border-collapse: collapse;
+	color: #000;
+	font-size: 18px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.table-style th {
+	background-color: #BDB76B;
+	color: white;
+	width: 50%;
+}
+
+.table-style td, .table-style th {
+	padding: 5px;
+	border: 0;
+	width: 100px;
+	text-align: center;
+}
+
+.table-style td {
+	border-bottom: 1px dotted #BDB76B;
+}
+
+.table-style td * {
+	display: inline;
+}
+
+.custom-alert {
+	margin-bottom: 5px;
+	margin-top: 19px;
+}
+
+.btn-fix {
+	width: 70px;
+}

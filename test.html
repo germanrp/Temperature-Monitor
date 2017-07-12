@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link data-require="bootstrap-css@*" data-semver="3.3.6"
+	rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link
+	href="https://fonts.googleapis.com/css?family=Scada|Carrois+Gothic"
+	rel="stylesheet" type="text/css">
+
+
+<script src="https://npmcdn.com/core-js/client/shim.min.js"></script>
+
+<script src="https://npmcdn.com/zone.js@0.8.5?main=browser"></script>
+<script src="https://npmcdn.com/reflect-metadata@0.1.3"></script>
+<script src="https://npmcdn.com/systemjs@0.19.27/dist/system.src.js"></script>
+
+<style>
+
+/* This is for global styles */
+
+
+h1 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	font-size: 36px;
+	line-height: 40px;
+	padding: 15px 15px 15px 15%;
+	color: #355681;
+	box-shadow: inset 0 0 0 1px rgba(53, 86, 129, 0.4), inset 0 0 5px
+		rgba(53, 86, 129, 0.5), inset -285px 0 35px white;
+	border-radius: 0 10px 0 10px;
+	background: #fff url(./src/assets/img/background-image-header.jpg) no-repeat center left;
+}
+
+h3, app-root {
+	margin: 1em 0 0.5em 0;
+	font-weight: 400;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+	font-size: 24px;
+	line-height: 40px;
+	color: #355681;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(53, 86, 129, 0.3);
+}
+
+.affix {
+	top: 0;
+	width: 100%;
+}
+
+.custom-header-style {
+	text-align: right;
+}
+
+.form-style {
+	max-width: 600px;
+	margin: 50px 30px;
+	background: #fff;
+	border-radius: 2px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.form-style li {
+	display: block;
+	padding: 9px;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+}
+
+.form-style li:last-child {
+	border: none;
+	margin-bottom: 0px;
+	text-align: right;
+	padding-right: 40px
+}
+
+.form-style li>label {
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	padding: 2px 5px 2px 5px;
+	color: #B9B9B9;
+	font-size: 14px;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-style input[type="text"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style input[type="text"]:focus {
+	
+}
+
+.form-style li>span {
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.form-style input[type="submit"], .action-button {
+	background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+	color: #D2E2FF;
+}
+
+.form-style input[type="submit"]:hover, .action-button:hover {
+	background: #6B9FFF;
+	color: #fff;
+}
+
+.section-fix {
+	padding-top: 60px;
+}
+
+.table-class {
+	overflow-x: auto;
+	padding-top: 40px;
+}
+
+
+.myOtherTable {
+	background-color: #FFFFE0;
+	border-collapse: collapse;
+	color: #000;
+	font-size: 18px;
+}
+
+.myOtherTable th {
+	background-color: #BDB76B;
+	color: white;
+	width: 50%;
+}
+
+.myOtherTable td, .myOtherTable th {
+	padding: 5px;
+	border: 0;
+	width: 100px;
+	text-align: center;
+}
+
+.myOtherTable td {
+	border-bottom: 1px dotted #BDB76B;
+}
+
+.myOtherTable td * {
+	display: inline;
+}
+
+
+</style>
+
+<body>
+
+
+
+<!-- Header -->
+<header class="w3-container w3-padding" id="myHeader">
+  <div class="w3-center">
+  <h1>Temperature Monitor</h1>
+  </div>
+</header>
+
+
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  
+  <i class="w3-margin-bottom w3-text-theme">
+  <form class="form-style col-xs-11" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+<div class="form-group">
+
+
+
+
+
+						<ul>
+							<li><label for="temperature">Add
+									Temperature</label> 
+								
+								
+								<input type="text"
+			class="form-control" id="myIndex" required [(ngModel)]="input.value"
+			name="myIndex"
+			maxlength="100"
+			pattern="(^-?0\.[0-9]*[1-9]+[0-9]*$)|(^-?[1-9]+[0-9]*((\.[0-9]*[1-9]+[0-9]*$)|(\.[0-9]+)))|(^-?[1-9]+[0-9]*$)|(^0$){1}"
+			#input="ngModel">
+								
+								
+								<span>Enter
+									the temperature here (in &deg;F)</span>
+									
+									<br />
+									
+									<div [hidden]="loginForm.form.valid || loginForm.form.pristine"
+			class="alert alert-danger">
+			<div [hidden]="!loginForm.form.hasError('required')">Value is
+				required</div>
+			<div [hidden]="!loginForm.form.hasError('pattern')">Value
+				should be only numbers</div>
+		</div>
+									</li>
+							<li><button type="submit" class="btn btn-success btn-block"
+		(click)="addRecipient(input.value)" [disabled]="!loginForm.form.valid">Add</button></li>
+							
+							
+							
+							
+						</ul>
+						
+						
+						
+						
+						
+						
+							</div>
+					</form></i>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  <div class="progress col-xs-3">
+				<div class="progress-bar"
+					[ngStyle]="{ 'width': currentPercentage + '%' }">
+					<span>{{currentPercentage}}% Complete</span>
+				</div>
+			</div>
+			
+			<div>
+<table class="myOtherTable" [hidden]="!submitted">
+	<tr>
+		<th>Element</th>
+
+	</tr>
+
+	<div *ngFor=" let recipient of recipients;  let i=index"
+		id="conditional-div">
+		<div *ngIf="i<8">
+			<tr>
+				<td>{{recipient}}</td>
+				<td><button type="submit" (click)="removeRecipient(recipient)">Delete</button></td>
+			</tr>
+		</div>
+	</div>
+
+
+</table>
+</div>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  	<section class="section-fix">
+						<button class="action-button">Calculate</button>
+					</section>
+
+					<div class="table-class">
+
+						<table>
+							<thead>
+								<tr class="section-format">
+									<th class="col-xs-3 uppercase">Mean</th>
+									<th class="col-xs-3 uppercase">Median</th>
+									<th class="col-xs-3 uppercase">Range</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+
+									<td class="col-xs-1"><input type="text"
+										class="form-control" value="30" readonly></td>
+									<td class="col-xs-1"><input type="text"
+										class="form-control" value="40" readonly></td>
+									<td class="col-xs-1"><input type="text"
+										class="form-control" value="20" readonly></td>
+
+								</tr>
+							</tbody>
+						</table>
+					</div>
+  </div>
+</div>
+</div>
+
+<div class="w3-container">
+
+<footer class="w3-container w3-blue-grey">
+  <app-root>Validating...</app-root>
+					<div class="custom-header-style">
+					<p>Developer Name: German Pelaez</p>
+					<a href="jasmine-test-runner.html">Run Unit Tests</a></div>
+</footer>
+
+</div>
+
+</body>
+</html>

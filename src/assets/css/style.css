@@ -1,0 +1,47 @@
+/* This is for global styles */
+body {
+	background-color: #E6E6E6;
+}
+
+h1 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	font-size: 36px;
+	line-height: 40px;
+	padding: 15px 15px 15px 15%;
+	color: #355681;
+	box-shadow: inset 0 0 0 1px rgba(53, 86, 129, 0.4), inset 0 0 5px
+		rgba(53, 86, 129, 0.5), inset -285px 0 35px white;
+	border-radius: 0 10px 0 10px;
+	background: #fff url(../img/background-image-header.jpg) no-repeat center left;
+}
+
+h3 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 400;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+	font-size: 24px;
+	line-height: 40px;
+	color: #355681;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(53, 86, 129, 0.3);
+}
+
+.affix {
+	top: 0;
+	width: 100%;
+	height: 600px;
+}
+
+.custom-header-style {
+	text-align: right;
+}
+
+.fix-height {
+	min-height: 300px !important;
+	
+}
