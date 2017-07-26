@@ -7,7 +7,7 @@
 2. Sample Data and expected result
 3. Resources
 
-##Goal
+## Goal
 
 Build a Temperature Monitor Single Page Application (SPA) using Angular2.
 
@@ -39,12 +39,12 @@ As an anonymous end user, I want a progress bar to see how full my collection of
 - You MUST unit test all the use cases that you feel is appropriate.
 - Twitter Bootstrap CSS is already included in the index file, use it at will
 
-##Sample Data and expected result
+## Sample Data and expected result
 ```[5, 1, -7, 7, 8, 3] --> [-7, 1, 3, 5, 7, 8] = (3+5)/2 = 4```
 
 ```[5, 1, -7, 7, 8, 3, 9] --> [-7, 1, 3, 5, 7, 8, 9] = 5```
 
-##Resources
+## Resources
 
 - [Apps Dev Email][AppsDev]
 - [Jasmin Documentation][Jasmine]
